@@ -1,5 +1,5 @@
 # Problem link: https://leetcode.com/problems/path-with-maximum-gold/description
-# Time: O(m * n)
+# Time: O(m * n * (4 ^ (m * n))))
 # Space: O(m *n), for recursive call stack
 class Solution:
     def getMaximumGold(self, grid: List[List[int]]) -> int:
