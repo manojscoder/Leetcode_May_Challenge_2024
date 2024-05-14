@@ -3,7 +3,7 @@
 # Space: O(m *n), for recursive call stack
 class Solution:
     def getMaximumGold(self, grid: List[List[int]]) -> int:
-        result, visit, rows, cols = 0, set(), len(grid), len(grid[0])
+        result, rows, cols = 0, len(grid), len(grid[0])
 
         def backtrack(r, c, gold):
             nonlocal result
