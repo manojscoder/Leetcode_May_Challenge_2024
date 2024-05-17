@@ -3,20 +3,16 @@
 # Space: O(n)
 class Solution:
     def removeLeafNodes(self, root: Optional[TreeNode], target: int) -> Optional[TreeNode]:
-        def check(node):
-            return not node.left and not node.right and node.val == target
-            
+
         def dfs(node):
-            if not node or check(node):
+            if not node:
                 return None
             
             node.left = dfs(node.left)
-            if check(node):
-                return None
             node.right = dfs(node.right)
-            if check(node):
+            if node.left is None and node.right is None and node.val == target:
                 return None
                 
             return node
-        
+    
         return dfs(root)
