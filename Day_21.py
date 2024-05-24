@@ -1,6 +1,6 @@
 # Problem link: https://leetcode.com/problems/subsets/description
 # Time: O(2 ^ n)
-# Space: O(1)
+# Space: O(n) for recursive stack
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         result, curr = [], []
