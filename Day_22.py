@@ -1,6 +1,6 @@
 # Problem link: https://leetcode.com/problems/palindrome-partitioning
 # Time: O(2 ^ n)
-# Space: O(2 ^ n) for recursive stack
+# Space: O(n) for recursive stack
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
         result = []
