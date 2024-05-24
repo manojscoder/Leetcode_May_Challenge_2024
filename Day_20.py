@@ -1,6 +1,6 @@
 # Problem link: https://leetcode.com/problems/sum-of-all-subset-xor-totals/description
 # Time: O(2 ^ n)
-# Space: O(1)
+# Space: O(n) for recursive stack
 class Solution:
     def subsetXORSum(self, nums: List[int]) -> int:
         def dfs(i, total):
