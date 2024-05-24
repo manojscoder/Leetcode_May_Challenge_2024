@@ -1,6 +1,6 @@
 # Problem link: https://leetcode.com/problems/the-number-of-beautiful-subsets/description
 # Time: O(2 ^ n)
-# Space: O(2 ^ n)
+# Space: O(n)
 class Solution:
     def beautifulSubsets(self, nums: List[int], k: int) -> int:
         
